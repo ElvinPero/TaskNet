@@ -1,5 +1,9 @@
 # TaskNet
 
+![image](https://github.com/ElvinPero/TaskNet/assets/101408574/8ad1ceab-fb0e-45bc-8c80-a9e495461673)
+
+
+
 ## Description
 
 TaskNet is a task management application built with React, TypeScript, and React Flow. It provides users with a user-friendly interface to create, organize, and track their tasks efficiently. 
@@ -9,7 +13,7 @@ With TaskNet, users can easily manage their to-do lists, set due dates, prioriti
 
 To install and set up TaskNet, follow these steps:
 
-1. Clone the repository: `git clone https://https://github.com/ElvinPero/TaskNet.git`
+1. Clone the repository: `git clone https://github.com/ElvinPero/TaskNet.git`
 2. Navigate to the project directory: `cd tasknet`
 3. Install dependencies: `npm install`
 
