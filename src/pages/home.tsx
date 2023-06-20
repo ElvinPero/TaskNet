@@ -13,7 +13,7 @@ const home = () => {
         <>
             <div className='homeWrapper'>
                 <div className='topic'>
-                    <div className='head3'>Task Net        <button className="icon"><a href="https://github.com/ElvinPero/TaskNet"><img src={git} alt="" /></button></div>
+                    <div className='head3'>Task Net        <button className="icon"><a href="https://github.com/ElvinPero/TaskNet"><img src={git} alt="" /></a></button></div>
                 </div>
                 <div className='body1'>
                     <div className="para  head2">
