@@ -1,0 +1,464 @@
+body {
+  margin: 0;
+  background-color: #050314;
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+
+
+
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.header {
+  color: #fff9f9;
+}
+
+.react-flow__node-mindmap {
+  background: rgb(17, 2, 2);
+  border-radius: 2px;
+  border: none;
+  padding: 6px 10px;
+  font-weight: 700;
+}
+
+.react-flow__handle.target {
+  top: 50%;
+  pointer-events: none;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.react-flow__handle.source {
+  top: 0;
+  left: 0;
+  transform: none;
+  background: #c16aff;
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+
+  border: none;
+}
+
+.react-flow .react-flow__connectionline {
+
+  z-index: 0;
+}
+
+.inputWrapper {
+  display: flex;
+  height: 20px;
+  z-index: 1;
+  position: relative;
+  pointer-events: none;
+}
+
+.dragHandle {
+  background: transparent;
+  width: 14px;
+  height: 100%;
+  margin-right: 4px;
+  display: flex;
+  align-items: center;
+  pointer-events: all;
+}
+
+.input {
+  border: none;
+  padding: 0 2px;
+  border-radius: 1px;
+  font-weight: 700;
+  background: transparent;
+  height: 100%;
+  color: #222;
+  pointer-events: none;
+}
+
+.input:focus {
+  border: none;
+  outline: none;
+
+  background: rgba(105, 105, 105, 0.195);
+  pointer-events: all;
+}
+
+@keyframes typing {
+
+  0.0000%,
+  27.3488% {
+    content: "";
+  }
+
+  1.1395%,
+  26.2093% {
+    content: "P";
+  }
+
+  2.2791%,
+  25.0698% {
+    content: "Pr";
+  }
+
+  3.4186%,
+  23.9302% {
+    content: "Prod";
+
+  }
+
+  4.5581%,
+  22.7907% {
+    content: "Product";
+
+  }
+
+  5.6977%,
+  21.6512% {
+    content: "Productivi";
+
+  }
+
+  6.8372%,
+  20.5116% {
+    content: "Productivity";
+
+  }
+
+  7.9767%,
+  19.3721% {
+    content: "Productivity w";
+
+  }
+
+  9.1163%,
+  18.2326% {
+    content: "Productivity wi";
+  }
+
+  10.2558%,
+  17.0930% {
+    content: "Productivity wit";
+  }
+
+  30.7674%,
+  51.2791% {
+    content: "Productivity with";
+  }
+
+  31.9070%,
+  50.1395% {
+    content: "Productivity with ";
+  }
+
+  33.0465%,
+  49.0000% {
+    content: "Productivity with g";
+  }
+
+  34.1860%,
+  47.8605% {
+    content: "Productivity with gr";
+  }
+
+  35.3256%,
+  46.7209% {
+    content: "Productivity with gra";
+  }
+
+  36.4651%,
+  45.5814% {
+    content: "Productivity with grap";
+  }
+
+  37.6047%,
+  44.4419% {
+    content: "Productivity with graph";
+  }
+
+  54.6977%,
+  75.2093% {
+    content: "";
+  }
+
+  55.8372%,
+  74.0698% {
+    content: "r";
+  }
+
+  56.9767%,
+  72.9302% {
+    content: "re";
+  }
+
+  58.1163%,
+  71.7907% {
+    content: "rea";
+  }
+
+  59.2558%,
+  70.6512% {
+    content: "read";
+  }
+
+  60.3953%,
+  69.5116% {
+    content: "reade";
+  }
+
+  61.5349%,
+  68.3721% {
+    content: "reader";
+  }
+
+  78.6279%,
+  96.8605% {
+    content: "";
+  }
+
+  79.7674%,
+  95.7209% {
+    content: "h";
+  }
+
+  80.9070%,
+  94.5814% {
+    content: "hu";
+  }
+
+  82.0465%,
+  93.4419% {
+    content: "hum";
+  }
+
+  83.1860%,
+  92.3023% {
+    content: "huma";
+  }
+
+  84.3256%,
+  91.1628% {
+    content: "human";
+  }
+}
+
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+.typewriter {
+  --caret: currentcolor;
+}
+
+.typewriter::before {
+  content: "";
+  animation: typing 13.5s infinite;
+}
+
+.typewriter::after {
+  content: "";
+  border-right: 1px solid var(--caret);
+  animation: blink 0.5s linear infinite;
+}
+
+.typewriter.thick::after {
+  border-right: 1ch solid var(--caret);
+}
+
+.typewriter.nocaret::after {
+  border-right: 0;
+}
+
+
+@media (prefers-reduced-motion) {
+  .typewriter::after {
+    animation: none;
+  }
+
+  @keyframes sequencePopup {
+
+    0%,
+    100% {
+      content: "with Graph-based Task Management";
+    }
+
+    25% {
+      content: "writer";
+    }
+
+    50% {
+      content: " with ask Management";
+    }
+
+    75% {
+      content: "with Graph-based ";
+    }
+  }
+
+  .typewriter::before {
+    content: "graph";
+    animation: sequencePopup 12s linear infinite;
+  }
+}
+
+
+.btn-hover {
+  width: 200px;
+  font-size: 20px;
+  font-weight: 900;
+  color: #ffffff;
+  cursor: pointer;
+
+  height: 55px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+
+
+  border-radius: 50px;
+
+  -o-transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.btn-hover:hover {
+  background-position: 100% 0;
+
+  -o-transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  transform: translateY(-10px);
+
+}
+
+.btn-hover:focus {
+  outline: none;
+}
+
+.btn-hover.color-1 {
+  background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+  box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+
+
+.homeWrapper {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.head1 {
+  font-size: 9vmin;
+  color: rgb(248, 248, 248);
+  text-align: left;
+  padding: 10px;
+  font-family: Lato, sans-serif;
+  font-weight: 900;
+  margin: 1rem 0 1rem 2rem;
+}
+
+
+
+.head3 {
+  font-size: 9vmin;
+  color: rgb(140, 110, 250);
+  text-align: left;
+  padding: 10px;
+  gap: 20px;
+  font-family: Lato, sans-serif;
+  font-weight: 900;
+  margin: 1rem 0 1rem 2rem;
+}
+
+.head3:hover {
+  font-size: 9vmin;
+  color: rgb(255, 255, 255);
+  text-align: left;
+  padding: 10px;
+  font-family: Lato, sans-serif;
+  font-weight: 900;
+  margin: 1rem 0 1rem 2rem;
+}
+
+.head2 {
+  font-size: 5vmin;
+  line-height: 35px;
+  color: rgb(213, 217, 221);
+  text-align: left;
+  padding: 10px;
+  font-family: sans-serif;
+  font-weight: 400;
+  margin: 1rem 0 1rem 2rem;
+}
+
+.body1 {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  height: auto;
+  width: auto;
+
+}
+
+.para {
+  display: flex;
+  justify-content: center;
+
+  height: 60%;
+  width: 50%
+}
+
+.imgg {
+  display: flex;
+  justify-content: center;
+  height: 400px;
+
+}
+
+
+.icon {
+  align-self: center;
+  background-color: transparent;
+  border-radius: 50%;
+  border-color: transparent;
+  width: 40px;
+  height: 40px;
+  transition: all .2s ease-in-out;
+}
+
+.icon:hover {
+
+  background-color: transparent;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border-color: transparent;
+  cursor: pointer;
+  transform: translateY(-5px) scale(1.2);
+}
+
+.header:hover {
+  cursor: pointer;
+
+}
